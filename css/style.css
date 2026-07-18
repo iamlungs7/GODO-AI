@@ -186,3 +186,40 @@ background:#00d084;
 color:black;
 
 }
+
+
+.status-bar{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+margin-bottom:60px;
+
+}
+
+.status{
+
+background:#1f2937;
+
+padding:12px 22px;
+
+border-radius:50px;
+
+font-size:16px;
+
+border:1px solid #374151;
+
+}
+
+.online{
+
+border:1px solid #00d084;
+
+color:#00d084;
+
+}
