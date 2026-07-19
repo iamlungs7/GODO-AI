@@ -1,0 +1,70 @@
+{
+    "wins": 0,
+    "losses": 0,
+    "breakeven": 0,
+    "overall": 0,
+    "total_signals": 0,
+    "today": {
+        "2026-07-13": {
+            "wins": 0,
+            "losses": 0,
+            "breakeven": 0
+        },
+        "2026-07-14": {
+            "wins": 0,
+            "losses": 0,
+            "breakeven": 0
+        },
+        "2026-07-15": {
+            "wins": 0,
+            "losses": 0,
+            "breakeven": 0
+        },
+        "2026-07-16": {
+            "wins": 0,
+            "losses": 0,
+            "breakeven": 0
+        },
+        "2026-07-17": {
+            "wins": 0,
+            "losses": 0,
+            "breakeven": 0
+        }
+    },
+    "weekly": {
+        "2026-W28": {
+            "wins": 0,
+            "losses": 0,
+            "breakeven": 0
+        }
+    },
+    "monthly": {
+        "2026-07": {
+            "wins": 0,
+            "losses": 0,
+            "breakeven": 0
+        }
+    },
+    "assets": {
+        "XAUUSD": {
+            "wins": 0,
+            "losses": 0,
+            "breakeven": 0
+        },
+        "BTCUSD": {
+            "wins": 0,
+            "losses": 0,
+            "breakeven": 0
+        },
+        "ETHUSD": {
+            "wins": 0,
+            "losses": 0,
+            "breakeven": 0
+        },
+        "BNBUSD": {
+            "wins": 0,
+            "losses": 0,
+            "breakeven": 0
+        }
+    }
+}
