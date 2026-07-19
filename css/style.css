@@ -390,3 +390,36 @@ border-color:#00d084;
 box-shadow:0 0 20px rgba(0,208,132,0.3);
 
 }
+
+
+.about{
+
+max-width:1000px;
+
+margin:80px auto;
+
+padding:0 30px;
+
+text-align:center;
+
+}
+
+.about h2{
+
+font-size:42px;
+
+color:#00d084;
+
+margin-bottom:25px;
+
+}
+
+.about p{
+
+font-size:20px;
+
+line-height:38px;
+
+color:#cbd5e1;
+
+}
