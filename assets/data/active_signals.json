@@ -1,1 +1,58 @@
-{}
+{
+    "2": {
+        "id": 2,
+        "symbol": "BTCUSD",
+        "side": "BUY",
+        "entry_low": 64718.537,
+        "entry_high": 64785.463,
+        "sl": 64280.0,
+        "tp": 66301.85200000001,
+        "time": "2026-07-20 00:22:03",
+        "status": "ACTIVE",
+        "protected": false,
+        "breakeven_sent": false,
+        "counted": false
+    },
+    "3": {
+        "id": 3,
+        "symbol": "BNBUSD",
+        "side": "BUY",
+        "entry_low": 570.667142857143,
+        "entry_high": 571.2528571428571,
+        "sl": 566.33,
+        "tp": 586.0214285714284,
+        "time": "2026-07-20 00:22:05",
+        "status": "ACTIVE",
+        "protected": false,
+        "breakeven_sent": false,
+        "counted": false
+    },
+    "8": {
+        "id": 8,
+        "symbol": "ETHUSD",
+        "side": "BUY",
+        "entry_low": 1875.3612857142857,
+        "entry_high": 1878.6987142857142,
+        "sl": 1857.0,
+        "tp": 1943.794857142857,
+        "time": "2026-07-20 02:11:18",
+        "status": "ACTIVE",
+        "protected": false,
+        "breakeven_sent": false,
+        "counted": false
+    },
+    "10": {
+        "id": 10,
+        "symbol": "XAUUSD",
+        "side": "BUY",
+        "entry_low": 4016.724939857143,
+        "entry_high": 4020.153080142857,
+        "sl": 3983.42894,
+        "tp": 4130.325500571429,
+        "time": "2026-07-20 04:52:57",
+        "status": "ACTIVE",
+        "protected": false,
+        "breakeven_sent": false,
+        "counted": false
+    }
+}
