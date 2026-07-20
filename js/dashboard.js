@@ -89,3 +89,25 @@ fetch("assets/data/latest_signals.json")
 .catch(error => {
     console.log(error);
 });
+
+
+// ==========================
+// Live Prices
+// ==========================
+
+fetch("assets/data/latest_prices.json")
+.then(response => response.json())
+.then(data => {
+
+    const prices = data.prices;
+
+    document.getElementById("livePrices").innerHTML = `
+<b>BTCUSD</b> : ${Number(prices.BTCUSD).toFixed(2)}<br>
+<b>ETHUSD</b> : ${Number(prices.ETHUSD).toFixed(2)}<br>
+<b>BNBUSD</b> : ${Number(prices.BNBUSD).toFixed(2)}<br>
+<b>XAUUSD</b> : ${Number(prices.XAUUSD).toFixed(2)}<br>
+<b>NDX</b> : ${Number(prices.NDX).toFixed(2)}
+`;
+
+})
+.catch(error => console.log(error));
