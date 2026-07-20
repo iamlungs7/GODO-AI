@@ -26,5 +26,19 @@
         "protected": false,
         "breakeven_sent": false,
         "counted": false
+    },
+    "15": {
+        "id": 15,
+        "symbol": "ETHUSD",
+        "side": "SELL",
+        "entry_low": 1859.3429999999998,
+        "entry_high": 1864.817,
+        "sl": 1891.71,
+        "tp": 1762.2419999999993,
+        "time": "2026-07-20 07:55:20",
+        "status": "ACTIVE",
+        "protected": false,
+        "breakeven_sent": false,
+        "counted": false
     }
 }

@@ -9,6 +9,7 @@ FILES = [
     "trade_statistics.json",
     "active_signals.json",
     "active_trades.json"
+    "latest_signals.json"
 ]
 
 for file in FILES:
