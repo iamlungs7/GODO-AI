@@ -124,6 +124,66 @@ document.getElementById("lastRefresh").innerText =
 }
 
 // ==========================
+// Active Trades
+// ==========================
+
+function loadActiveTrades() {
+
+    fetch("assets/data/active_signals.json")
+    .then(response => response.json())
+    .then(data => {
+
+        const box = document.getElementById("activeTrades");
+
+        if (!data || data.length === 0) {
+            box.innerHTML = "No Active Trades";
+            return;
+        }
+
+        let html = "";
+
+        data.forEach(trade => {
+
+            html += `
+            <div class="signal-card">
+
+            <strong>${trade.symbol}</strong><br>
+
+            ${trade.side}<br><br>
+
+            Entry :
+            ${Number(trade.entry_low).toFixed(2)}
+            -
+            ${Number(trade.entry_high).toFixed(2)}
+            <br>
+
+            TP :
+            ${Number(trade.tp).toFixed(2)}
+            <br>
+
+            SL :
+            ${Number(trade.sl).toFixed(2)}
+            <br><br>
+
+            Status :
+            <b>${trade.status}</b>
+
+            </div>
+
+            <hr>
+            `;
+
+        });
+
+        box.innerHTML = html;
+
+    })
+
+    .catch(error => console.log(error));
+
+}
+
+// ==========================
 // Engine Status
 // ==========================
 
@@ -143,7 +203,6 @@ data.scanner;
 .catch(error => console.log(error));
 
 }
-
 
 // ==========================
 // Next Scan Countdown
@@ -175,6 +234,8 @@ loadLatestSignals();
 
 loadPrices();
 
+loadActiveTrades();
+
 loadEngineStatus();
 
 setInterval(()=>{
@@ -182,6 +243,8 @@ setInterval(()=>{
 loadLatestSignals();
 
 loadPrices();
+
+loadActiveTrades();
 
 loadEngineStatus();
 
