@@ -144,6 +144,32 @@ function loadActiveTrades() {
 
         data.forEach(trade => {
 
+            let statusColor = "#ffffff";
+
+            switch (trade.status) {
+
+                case "ACTIVE":
+                    statusColor = "#00ff66";
+                    break;
+
+                case "WIN":
+                    statusColor = "#00bfff";
+                    break;
+
+                case "LOSS":
+                    statusColor = "#ff4444";
+                    break;
+
+                case "BREAKEVEN":
+                    statusColor = "#ffaa00";
+                    break;
+
+                case "PROTECTED":
+                    statusColor = "#ffd700";
+                    break;
+
+            }
+
             html += `
             <div class="signal-card">
 
@@ -166,8 +192,9 @@ function loadActiveTrades() {
             <br><br>
 
             Status :
-            <b>${trade.status}</b>
-
+            <b style="color:${statusColor}">
+            ${trade.status}
+            </b>
             </div>
 
             <hr>
@@ -234,6 +261,8 @@ loadLatestSignals();
 
 loadPrices();
 
+loadTradingSummary();
+
 loadActiveTrades();
 
 loadEngineStatus();
@@ -244,8 +273,56 @@ loadLatestSignals();
 
 loadPrices();
 
+loadTradingSummary();
+
 loadActiveTrades();
 
 loadEngineStatus();
 
 },5000);
+
+//===========================
+// Trade Summary
+//===========================
+
+function loadTradingSummary(){
+
+fetch("assets/data/trade_statistics.json")
+
+.then(response=>response.json())
+
+.then(data=>{
+
+const wins=data.wins || 0;
+
+const losses=data.losses || 0;
+
+const breakeven=data.breakeven || 0;
+
+const total=wins+losses+breakeven;
+
+const active = data.active_trades || 0;
+
+const rate=
+total===0
+?0
+:((wins/total)*100).toFixed(1);
+
+document.getElementById("summaryActive").innerText =
+"Active Trades : " + active;
+
+document.getElementById("summaryWins").innerText=
+"Wins : "+wins;
+
+document.getElementById("summaryLosses").innerText=
+"Losses : "+losses;
+
+document.getElementById("summaryBreakeven").innerText=
+"Breakeven : "+breakeven;
+
+document.getElementById("summaryRate").innerText=
+"Win Rate : "+rate+"%";
+
+});
+
+}
