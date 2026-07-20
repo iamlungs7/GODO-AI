@@ -168,33 +168,6 @@ setInterval(() => {
 }, 1000);
 
 // ==========================
-// Scanner Animation
-// ==========================
-
-const markets = [
-    "BTCUSD",
-    "ETHUSD",
-    "BNBUSD",
-    "XAUUSD",
-    "NDX"
-];
-
-let i = 0;
-
-setInterval(() => {
-
-    document.getElementById("scannerStatus").innerText =
-    "Scanning " + markets[i] + "...";
-
-    i++;
-
-    if (i >= markets.length) {
-        i = 0;
-    }
-
-}, 1000);
-
-// ==========================
 // Auto Refresh Dashboard
 // ==========================
 
