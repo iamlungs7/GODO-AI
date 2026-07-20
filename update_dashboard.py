@@ -29,7 +29,7 @@ while True:
         if os.path.exists(source_file):
 
             shutil.copy2(source_file, destination_file)
-            print(f"✅ {file}")
+##            print(f"✅ {file}")
 
         else:
 
