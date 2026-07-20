@@ -45,3 +45,31 @@ document.getElementById("breakeven").innerText =
 console.log(error);
 
 });
+
+//============================
+//Latest Signals JSON
+//============================
+
+fetch("assets/data/latest_signals.json")
+.then(response => response.json())
+.then(data => {
+
+    const box = document.getElementById("latestSignals");
+
+    if (!data.signals || Object.keys(data.signals).length === 0) {
+        box.innerHTML = "No signals available";
+        return;
+    }
+
+    let html = "";
+
+    for (const symbol in data.signals) {
+        html += `<pre>${data.signals[symbol]}</pre><hr>`;
+    }
+
+    box.innerHTML = html;
+
+})
+.catch(error => {
+    console.log(error);
+});
