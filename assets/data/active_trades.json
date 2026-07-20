@@ -18,7 +18,7 @@
         "sl": null,
         "tp": null,
         "risk": null,
-        "created": "2026-07-20 07:38:45"
+        "created": "2026-07-20 08:49:53"
     },
     "14": {
         "signal_id": 14,
@@ -39,6 +39,27 @@
         "sl": null,
         "tp": null,
         "risk": null,
-        "created": "2026-07-20 07:38:45"
+        "created": "2026-07-20 08:49:53"
+    },
+    "15": {
+        "signal_id": 15,
+        "symbol": "ETHUSD",
+        "side": "SELL",
+        "state": "WAIT_RSI",
+        "entry_reached": false,
+        "entry_confirmed": false,
+        "entry_rejected": true,
+        "order_sent": false,
+        "order_filled": false,
+        "protected": false,
+        "trade_closed": false,
+        "result": "",
+        "reason": "SELL RSI confirmation failed",
+        "entry_low": null,
+        "entry_high": null,
+        "sl": null,
+        "tp": null,
+        "risk": null,
+        "created": "2026-07-20 08:49:53"
     }
 }
