@@ -1,7 +1,7 @@
 {
     "wins": 0,
     "losses": 1,
-    "breakeven": 7,
+    "breakeven": 8,
     "overall": 0.0,
     "total_signals": 8,
     "today": {
@@ -38,7 +38,7 @@
         "2026-07-21": {
             "wins": 0,
             "losses": 1,
-            "breakeven": 7
+            "breakeven": 8
         }
     },
     "weekly": {
@@ -50,14 +50,14 @@
         "2026-W29": {
             "wins": 0,
             "losses": 1,
-            "breakeven": 7
+            "breakeven": 8
         }
     },
     "monthly": {
         "2026-07": {
             "wins": 0,
             "losses": 1,
-            "breakeven": 7
+            "breakeven": 8
         }
     },
     "assets": {
@@ -74,7 +74,7 @@
         "ETHUSD": {
             "wins": 0,
             "losses": 0,
-            "breakeven": 1
+            "breakeven": 2
         },
         "BNBUSD": {
             "wins": 0,
